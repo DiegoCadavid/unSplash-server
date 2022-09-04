@@ -31,7 +31,7 @@
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx">
+    <a href="https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP">
       Challenge
     </a>
   </h3>
@@ -53,7 +53,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 ```bash
 #Client
 # Clone this repository
-$ git clone https://github.com/DiegoCadavid/
+$ git clone https://github.com/DiegoCadavid/unSplash-server
 
 # Install dependencies
 $ npm i
