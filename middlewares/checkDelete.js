@@ -7,7 +7,7 @@ const checkDelete = async (req, res, next) => {
     if (!id) {
         return res.status(400).json({
             code: 400,
-            msg: 'Debe enviar un id ¬_ ¬ '
+            msg: 'You must send an id'
         });
     }
 
@@ -16,7 +16,7 @@ const checkDelete = async (req, res, next) => {
     if (!idValidate) {
         return res.status(400).json({
             code: 400,
-            msg: 'Debe ser un mongo id'
+            msg: 'Only mongo id allowed'
         });
     }
 
@@ -26,7 +26,7 @@ const checkDelete = async (req, res, next) => {
     if (!image) {
         return res.status(400).json({
             code: 400,
-            msg: 'No existe ese elemento'
+            msg: 'There is no such element'
         });
     }
 

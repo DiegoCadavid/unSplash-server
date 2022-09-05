@@ -11,7 +11,7 @@ const checkBody = async (req, res, next) => {
     if(!label || !url) {
         return res.status(400).json({
             code: 400,
-            msg : 'Faltan campos'
+            msg : 'missing fields'
         })
     }
 
@@ -19,7 +19,7 @@ const checkBody = async (req, res, next) => {
     if(label.trim().length <= 0){
         return res.status(400).json({
             code: 400,
-            msg: 'Label invalido'
+            msg: 'invalid label'
         });
     }
 
@@ -28,7 +28,7 @@ const checkBody = async (req, res, next) => {
     if(!urlValidate) {
         return res.status(400).json({
             code: 400,
-            msg: 'Url invalida'
+            msg: 'invalid url'
         });
     }
 
@@ -37,7 +37,7 @@ const checkBody = async (req, res, next) => {
     if(image) {
         return res.status(409).json({
             code: 409,
-            msg: 'Ya existe esa url :v'
+            msg: 'That url already exists'
         });
     }
 
