@@ -19,7 +19,7 @@ app.use(express.static('public')); //Static files
 
 // Routers
 const imageRouter = require('./routers/imageRouter');
-app.use('/',imageRouter);
+app.use('/images',imageRouter);
 
 
 app.listen(process.env.PORT, () => {
