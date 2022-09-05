@@ -37,7 +37,17 @@ imageRouter.get('/', async(req, res) => {
 
     // Vemos si existe el search
     const images = await Image.find({ 'label': { '$regex': search, '$options': 'i' } });
-    res.status(200).json(images)
+
+    // Formateamos la response
+    const imagesFormat = images.map( e => {
+        return {
+            label: e.label, 
+            url: e.url,
+            id: e._id
+        }
+    })
+
+    res.status(200).json(imagesFormat)
 })
 
 // DELETE
